@@ -1,2 +1,4 @@
-# IxT&Technology2Challenge1
- Challege 1 - IxT & Technology 2 - Jorn Meessen
+# IxT & Technology 2 - Challenge 1
+Dit is een project voor het vak IxT & Technology 2. 
+
+## Werking
