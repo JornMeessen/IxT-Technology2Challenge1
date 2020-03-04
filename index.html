@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" href="styles/layout.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <nav id="sidebar">        	
+      <ul class="flex-container">
+        <div>
+    			<h1 class="logo"><a href="index.html">SpaceX</a></h1>
+    			<button type="button" id="sidebarCollapse"><i data-feather="menu"></i></button>
+        </div>
+        <li><a href="#"><i data-feather="home"></i><label> Home</label></a></li>
+        <li class="active"><a href="#"><i data-feather="bar-chart-2"></i><label> Dashboard</label></a></li>
+        <li><a href="#"><i data-feather="trending-up"></i><label> Analysis</label></a></li>
+        <li><a href="#"><i data-feather="mail"></i><label> Inbox</label></a></li>
+        <li><a href="#"><i data-feather="calendar"></i><label> Calendar</label></a></li>
+        <li><a href="#"><i data-feather="users"></i><label> Colleagues</label></a></li>
+        <li><a href="#"><i data-feather="help-circle"></i><label> Help Center</label></a></li>
+        <li><a href="#"><i data-feather="settings"></i><label> Settings</label></a></li>
+      </ul>
+    </nav>
+    <header class="flex-container">
+      <div class="search">
+      	<label for="Search">
+          <i data-feather="search" class="search-icon"></i>
+        </label>
+      	<div class="search-input">
+          <input type="text" placeholder="Search..." v-model="searchQuery" id="Search">
+        </div>
+      </div>
+      <div id="header-navigation">
+        <ul>
+       		<li class="mobile-display-none"><a href="#"><i data-feather="sun"></i></a></li>
+      		<li><a href="#"><i data-feather="bell"></i></a></li>
+      		<li class="mobile-display-none"><a href="#"><i data-feather="help-circle"></i></a></li>
+      		<li><a href="#"><i data-feather="smile"></i><label> Liza Taylor</label></a></li>
+      	</ul>
+      </div>
+    </header>
+    <main>     
+      <h2>Dashboard</h2>
+      <section class="grid-layout">
+        <article class="Meter">
+    			<h3>How far can you go</h3>
+    			<div id="chartMeter"></div>
+    		</article>
+    		<article class="donut-chart span-2">
+    			<h3>My Daily Activities</h3>
+          <div class="flex">
+           	<div id="donutchart"></div>
+           	<ul>
+           	  <li><span>Work</span> 33.3%</li>
+           		<li><span>Eat</span> 8.3%</li>
+           		<li><span>Leisure</span> 16.7%</li>
+           		<li><span>Sleep</span> 41.7%</li>
+       			</ul>
+          </div>
+   			</article>
+   			<article class="chartTable span-2">
+    			<h3>What do we have left</h3>
+    			<div>
+    				<div id="chartTable"></div>
+    				<ul>
+           		<li><span>Drink</span> 33.3%</li>
+           		<li><span>Hot meals</span> 8.3%</li>
+           		<li><span>Cold meals</span> 16.7%</li>
+           	</ul>
+          </div>
+    		</article>
+    		<article class="calendar-day">
+    			<h3>Wednesday</h3>
+          <p class="the-day">26</p>
+      		<p class="the-month">January</p>
+    		</article>
+    		<article class="process">
+    			<h3>Process of the activity</h3>
+          <div class="progress-bar downloading"></div>
+          <div>
+            <p><i data-feather="briefcase"></i><span> 70 %</span></p>
+            <p>Work in control room</p>
+          </div>
+   			</article>
+			</section>
+      </main>
+      <footer class="flex-container">
+        Copyright © 2020, Powered By Jorn Meessen
+      </footer> 
+  	</body>
+</html>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+      //repace iconen
+      feather.replace()
+  
+  </script>
